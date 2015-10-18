@@ -1,0 +1,19 @@
+{   
+    "name": "footstones/bean-cli",
+    "description": "A Beanstalk CLI.",
+    "autoload": {
+        "psr-4": { 
+            "Footstones\\BeanCLI\\" : "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wellming Li",
+            "email": "wellming.li@howzhi.com"
+        }
+    ],
+    "require": {
+        "davidpersson/beanstalk" : "v2.0.0",
+        "symfony/console" : "v2.7.5"
+    }
+}

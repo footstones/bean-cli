@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Footstones\BeanCLI\JobPutCommand;
+use Footstones\BeanCLI\TubeStatsCommand;
+use Footstones\BeanCLI\TubeEmptyCommand;
+
+$application = new Application();
+$application->add(new JobPutCommand());
+$application->add(new TubeStatsCommand());
+$application->add(new TubeEmptyCommand());
+$application->run();
